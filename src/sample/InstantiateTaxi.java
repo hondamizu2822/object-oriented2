@@ -10,7 +10,7 @@ public class InstantiateTaxi {
 
         taxi.stepOnAccele();
         taxi.stepOnAccele();
-        taxi.stepOnBreake();
+        taxi.stepOnBrake();
 
         System.out.println("現在の速度は" + taxi.speed + "km/hです");
     }

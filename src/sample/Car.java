@@ -1,12 +1,14 @@
 package sample;
 
 public class Car {
-
-    private int speed;
-    private String name;
+    protected int speed;
+    protected String name;
     private boolean flg;
-    
-    
+
+
+    public int getSpeed() {
+        return speed;
+    }
 
     public void setSpeed(int speed) {
         this.speed = speed;
@@ -20,7 +22,7 @@ public class Car {
         this.name = name;
     }
 
-    public boolean isFlg() {//is になってる！！
+    public boolean isFlg() {
         return flg;
     }
 
@@ -28,35 +30,22 @@ public class Car {
         this.flg = flg;
     }
 
-    public int getSpeed(){
-        return speed;
-
+    Car(){
     }
 
-    public void detSPeed(int speed){
-        this.speed = speed;
-
+    Car(int speed,String name){
+        this.speed=speed;
+        this.name=name;
     }
 
-     public Car(){
-
-    }
-
-    public Car(int speed, String name){
-        this.speed = speed;
-        this.name = name;
-
-    }
 
     public void stepOnAccele(){
-        speed = speed + 10;
-        System.out.println("スピードが" + speed + "km/hに増えました");
-
+        speed+=10;
+        System.out.println("スピードが"+speed+"km/hに増えました");
     }
 
-    public void stepOnBreake(){
-        speed = speed - 10;
-        System.out.println("スピードが" + speed + "km/hに減りました");
+    public void stepOnBrake(){
+        speed-=10;
+        System.out.println("スピードが"+speed+"km/hに減りました");
     }
-
 }

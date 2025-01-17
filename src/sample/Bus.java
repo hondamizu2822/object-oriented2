@@ -10,7 +10,7 @@ public class Bus extends Car {
     
             bus.stepOnAccele();
             bus.stepOnAccele();
-            bus.stepOnBreake();
+            bus.stepOnBrake();
     
             System.out.println("現在の速度は" + bus.speed + "km/hです");
     }

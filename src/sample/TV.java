@@ -2,7 +2,7 @@ package sample;
 
 public class TV {
 
-    private int channel;
+    int channel;
 
     void changeChannel(int channel){
         if(channel <= 0 || 13 <= channel){
@@ -18,7 +18,5 @@ public class TV {
         System.out.println(this.channel + "チャンネルに切り替わりました");
         
     }
-
-
 
 }

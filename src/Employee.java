@@ -8,7 +8,7 @@ public class Employee {
         return name;
     }
     
-    public void setName(){
+    public void setName(String string){
         this.name = name;
     }
 
